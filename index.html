@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<header>
+  <img src="src/profile.jpg" alt="Tomer Mazurov" class="profile-img" />
+</header>
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fcfbf6;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 20px 10px; /* reduced from 60px */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      color: rgb(51, 116, 190);
+      letter-spacing: 4px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section h2 {
+      color: rgb(51, 116, 190);
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    section p {
+      text-align: center;
+      font-size: 1.1em;
+    }
+
+    .profile-img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px; /* reduced from 20px */
+    }
+
+
+    .diploma-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+      justify-items: center;
+    }
+    
+    .diploma-img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+      max-height: 200px;
+      object-fit: contain;
+    }
+    
+    .diploma-img:hover {
+      transform: scale(1.1);
+    }
+    
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .project-card {
+      position: relative;
+      width: 320px;
+      height: 180px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .overlay h3 {
+      margin: 0 0 10px;
+    }
+
+    .overlay p {
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #777;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+<header>
+  <h1>MY PORTFOLIO</h1>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a curious and driven <strong>Computer Science student</strong> with a deep passion for building things that make life better — whether it's a full-stack application, an Android utility, or an intelligent chess game with AI-powered analysis.
+      <br><br>
+      I enjoy exploring the intersection between <strong>technology, creativity, and meaning</strong>. Coding is not just a skill I practice — it’s a language I use to bring ideas to life. I’ve worked on a wide range of projects, from automating mobile testing flows using Appium to developing secure login systems and syncing real-time chess gameplay between users.
+      <br><br>
+      When I’m not coding, I’m learning. I explore topics like cybersecurity and networking. I balance logic with introspection, and I believe that a great developer is also someone who understands people, patterns, and purpose.
+    </p>
+  </section>
+  
+
+<section id="studies">
+  <h2>My Studies</h2>
+  <p>I’m currently studying <strong>Computer Science</strong> at <strong>Amal Bet</strong> High School, Petah Tikva, focusing on Python, Java, C#, mobile app development, and web technologies. I’ve also explored areas like <strong>cybersecurity, networking</strong>, and machine learning in my self-learning journey. <br><br>
+    I also have studied <strong>5 years</strong> in <strong>Mamram Project</strong>, and learned Communications and hardware, C, Python, DevOps, databases, java, .NET, project management, QA and Cyber.
+
+</p>
+</section>
+
+<section id="accomplishments">
+  <h2>My Accomplishments</h2>
+  <p>✔ Created multiple full-stack applications<br>
+     ✔ Built a few cool games like multiplayer chess app with AI analysis<br>
+     ✔ Self-learned advanced topics like machine learning, networking and algorithms.
+  </p>
+</section>
+
+
+<section id="diplomas">
+    <h2 style="color: rgb(51, 116, 190);">My Diplomas</h2>
+    <p>Here are some of the diplomas and certificates I’ve earned during my studies and personal development.</p>
+    <div class="diploma-grid">
+      <img src="src/t1.jpg" alt="Diploma 1" class="diploma-img rotate">
+      <img src="src/t2.jpg" alt="Diploma 2" class="diploma-img">
+      <img src="src/t3.jpg" alt="Diploma 3" class="diploma-img">
+      <img src="src/oracle.jpg" alt="Diploma 4" class="diploma-img">
+    </div>
+  </section>
+  
+  
+
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <a href="https://github.com/tomerIQ713/File-Transfer/tree/main" target="_blank" class="project-card">
+      <img src="src/project1.png" alt="File-Transfer Project" /> 
+      <div class="overlay">
+        <h3>File Transfer Project</h3>
+        <p>Python</p>
+      </div>
+    </a>    
+
+    <a href="https://github.com/tomerIQ713/Game" target="_blank" class="project-card">
+      <img src="src/project2.png" alt="Game Project" />
+      <div class="overlay">
+        <h3>Game Project</h3>
+        <p>Python</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<footer>
+  © Tomer Mazurov — All Rights Reserved
+</footer>
+
+</body>
+</html>
